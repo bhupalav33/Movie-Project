@@ -1,0 +1,18 @@
+.movies{
+	padding: 20px 5px;
+}
+.movies .movies-list{
+	list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.movies .movies-list li{
+	padding: 20px 0;
+	text-align: center;
+}
+.movies .movies-list li .movie-poster{
+	width: 180px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid;
+}

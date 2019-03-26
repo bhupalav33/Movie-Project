@@ -1,0 +1,9 @@
+<div class="movies">
+	<ul class="movies-list">
+		<li class="col-md-4 col-lg-3 col-sm-6 col-xs-12" *ngFor="let moviesData of movieList">
+			<img src="https://image.tmdb.org/t/p/w500{{moviesData.posterURL}}" alt="Movie Images" class="img-fluid movie-poster" (click)="passID(moviesData)"/>
+			<p class="movie-title"><strong>{{moviesData.title}}</strong></p>
+			<p class="movie-release-date">{{moviesData.releaseDate | date: 'dd/MM/yyyy'}}</p>
+		</li>
+	</ul>
+</div>

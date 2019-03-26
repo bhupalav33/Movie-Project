@@ -1,0 +1,14 @@
+<div class="movies-details">
+	<img src="https://image.tmdb.org/t/p/w1280{{movieData.backdropURL}}" alt="banner-1" class="img-fluid movie-banner"/>
+	<div class="movie-content">
+		<img src="https://image.tmdb.org/t/p/w500{{movieData.posterURL}}" alt="movie-poster" class="img-fluid movie-poster"/>
+		<div class="movie-header">
+			<p class="movie-title">{{movieData.title}}</p>
+			<p class="movie-date"><small>{{movieData.releaseDate | date : "dd/MM/yyyy"}}</small></p>
+		</div>
+		<div class="movie-plot">
+			{{movieData.plot}}
+		</div>
+		<a routerLink="/movies-list"><button class="btn btn-primary">Back to Movie List</button></a>
+	</div>
+</div>
